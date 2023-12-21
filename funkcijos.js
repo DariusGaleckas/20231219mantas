@@ -115,7 +115,87 @@ function text(tekstas) {
 
 }
 
-text("labasas")
+text("labasasasas")
+
+// Funkcija, kuri grąžina pirmą raidę didžiąja raide
+
+  let word = "darius";
+
+  function capitalizeFirstLetter(word) {
+    return console.log(word.charAt(0).toUpperCase() + word.slice(1));
+  }
+
+  capitalizeFirstLetter(word)
+     // console.log(capitalizeFirstLetter(word))
+
+// kitas
+
+    const word1 = 'ddddarius';  
+const [first, ...rest] = word1;  
+const capitalizeFirstLetter1 = `${first.toUpperCase()}${rest.join('')}`;  
+  
+console.log(capitalizeFirstLetter1);  
+
+// Funkcija, kuri grąžina masyvo pirmą elementą:
+
+let array1 = [151,2,3];
+
+function getFirstElement(array1) {
+    return console.log(array1[0]);
+  }
+getFirstElement(array1)
+
+
+
+//let = array2[1,2,3,45]
+
+  function getLastElement(array2) {
+    return array2[array2.length - 0];
+  }
+  //console.log(array2)
+
+
+// Funkcija, kuri suskaičiuoja masyvo skaičių sumą:
+let array33 = [1,2,3];
+function sumArray(array33) {
+  let sum = 0;
+  for (let i = 0; i < array33.length; i++) {
+    sum += array33[i];
+  }
+  return console.log(sum);
+}
+
+sumArray(array33)
+
+
+// 3 budas
+let array34 = [1,2,3,4]
+function logArraySum(array34) {
+    let sum = 0;
+    for (let i = 0; i < array34.length; i++) {
+      sum += array34[i];
+    }
+    console.log(sum);
+  }
+
+  logArraySum(array34)
+  
+
+
+function add(a,b) {
+    return console.log(a+b)
+}
+
+add(5,9)
+
+let numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
+console.log(sum);
+
+
 
 
 
